@@ -1,0 +1,27 @@
+<!--
+  CTA CARD: image + one button + unsubscribe. The shortest possible campaign email.
+  Good for a single announcement (registration open, waiting list, launch).
+  Keep the image and the button pointing to the SAME link, with different utm_content values.
+-->
+<div style="background:#F4F1EC; padding:18px 10px; text-align:center;">
+  <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%; max-width:640px; margin:0 auto; background:#ffffff; border-radius:8px;">
+    <tr>
+      <td>
+        <a href="{{LANDING_PAGE}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{CAMPAIGN}}&amp;utm_content=card-image">
+          <img src="{{CARD_IMG}}" alt="{{CARD_ALT}}" style="display:block; width:100%; height:auto; border-radius:8px 8px 0 0;" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:18px;">
+        <a href="{{LANDING_PAGE}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{CAMPAIGN}}&amp;utm_content=card-button"
+           style="display:inline-block; background:#2B4C7E; color:#ffffff; padding:12px 20px; border-radius:6px; text-decoration:none; font-weight:700; font-family:Arial, sans-serif;">
+          {{CTA_TEXT}}
+        </a>
+        <div style="margin-top:12px; font-family:Arial, sans-serif; font-size:12px; color:#888888;">
+          <a href="{{UNSUBSCRIBE_LINK}}" style="color:#888888; text-decoration:underline;">Unsubscribe</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

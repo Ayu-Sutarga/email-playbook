@@ -1,0 +1,16 @@
+<!--
+  VIDEO THUMBNAIL BLOCK
+  Emails can't play video, so use a clickable thumbnail that opens YouTube (or any video page).
+  Tip: add a play-button icon onto the thumbnail image itself, so people know it's a video.
+  Paste this block anywhere inside an email.
+-->
+<div style="text-align:center; margin:16px 0;">
+  <a href="{{VIDEO_LINK}}" target="_blank" rel="noopener noreferrer">
+    <img src="{{THUMBNAIL_IMG}}"
+         alt="Watch: {{VIDEO_TITLE}}"
+         style="width:100%; max-width:420px; height:auto; border-radius:8px; display:inline-block;" />
+  </a>
+  <p style="margin:8px 0 0 0; font-family:Arial, sans-serif; font-size:13px; color:#666666;">
+    ▶ <a href="{{VIDEO_LINK}}" target="_blank" style="color:#666666;">{{VIDEO_TITLE}}</a> ({{VIDEO_LENGTH}})
+  </p>
+</div>

@@ -1,0 +1,45 @@
+<!--
+  LIGHT NEWSLETTER SNIPPET: written to sit inside Instantly's editor.
+  Closer to a personal email than a designed template, which is better for inbox placement.
+  Replace every {{PLACEHOLDER}}. Follow the UTM rules in ../deliverability.md.
+-->
+<div style="font-family:Arial, sans-serif; font-size:15px; line-height:1.5; color:#222222;">
+
+  <h2 style="color:#2B4C7E; font-size:20px; margin:0 0 12px 0;">{{HEADLINE}}</h2>
+
+  <p>{{HIGHLIGHTS_PARAGRAPH}}</p>
+
+  <p>{{ANNOUNCEMENT_PARAGRAPH}}</p>
+
+  <!-- Hero image: links to the SAME page as the button (one destination) -->
+  <div style="text-align:center;">
+    <a href="{{LANDING_PAGE}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{CAMPAIGN}}&amp;utm_content=hero-image">
+      <img alt="{{HERO_ALT}}" src="{{HERO_IMG}}" style="max-width:100%; height:auto; border-radius:8px;" />
+    </a>
+  </div>
+
+  <!-- One main button -->
+  <div style="text-align:center; margin:20px 0;">
+    <a href="{{LANDING_PAGE}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{CAMPAIGN}}&amp;utm_content=main-button"
+       style="background-color:#2B4C7E; color:#ffffff; padding:12px 24px; text-decoration:none; font-weight:bold; border-radius:6px; font-size:14px; display:inline-block;">
+      {{CTA_TEXT}}
+    </a>
+  </div>
+
+  <p>We'd love to hear what resonated most with you. Just reply to this email.</p>
+
+  <p>{{CONTACT_DETAILS}}</p>
+
+  <p>Until next time,<br><strong>{{SIGN_OFF}}</strong></p>
+
+  <div style="text-align:center; margin-top:32px; font-size:13px; color:#777777;">
+    <p style="margin:0 0 8px 0;">
+      <a href="{{LINKEDIN_LINK}}" style="color:#777777;">LinkedIn</a> |
+      <a href="{{YOUTUBE_LINK}}" style="color:#777777;">YouTube</a> |
+      <a href="{{INSTAGRAM_LINK}}" style="color:#777777;">Instagram</a>
+    </p>
+    <!-- Use your sending tool's built-in unsubscribe link, not a typed placeholder -->
+    <p style="margin:0;"><a href="{{UNSUBSCRIBE_LINK}}" style="color:#777777;">Unsubscribe</a></p>
+  </div>
+
+</div>

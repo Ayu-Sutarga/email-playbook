@@ -1,0 +1,85 @@
+<!--
+  FULL NEWSLETTER TEMPLATE: responsive, for opted-in subscribers.
+  Paste into Instantly's HTML editor.
+  Replace: {{SUBJECT}}, {{PREHEADER_TEXT}}, {{HERO_IMG}}, {{HERO_ALT}}, {{HEADLINE}}, {{INTRO_TEXT}},
+           {{CTA_LINK}}, {{CTA_TEXT}}, {{CONTACT_LINE_1}}, {{CONTACT_LINE_2}}, {{BRAND_NAME}},
+           {{WEBSITE_LINK}}, {{LINKEDIN_LINK}}, {{INSTAGRAM_LINK}}, {{UNSUBSCRIBE_LINK}}
+  Colours: change #2B4C7E (primary) and #F4F1EC (soft background) to your brand.
+  Keep ONE main call to action. See ../case-studies/everything-clickable.md for why.
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{{SUBJECT}}</title>
+<style>
+  body { margin:0; padding:0; background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; color:#222222; }
+  table { border-collapse:collapse; }
+  img { border:0; display:block; max-width:100%; height:auto; }
+  @media only screen and (max-width:480px) {
+    .container { padding:0 12px !important; }
+    .h1 { font-size:18px !important; }
+  }
+</style>
+</head>
+<body>
+  <!-- Preheader: the preview line shown in the inbox -->
+  <div style="display:none;max-height:0px;overflow:hidden;">{{PREHEADER_TEXT}}</div>
+
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#ffffff">
+    <tr>
+      <td align="center">
+        <table class="container" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="max-width:640px; margin:0 auto;">
+
+          <tr><td style="height:14px; line-height:14px; font-size:14px;">&nbsp;</td></tr>
+
+          <!-- Hero image (linked to the same page as the main CTA) -->
+          <tr>
+            <td style="padding:0 12px;">
+              <a href="{{CTA_LINK}}" target="_blank">
+                <img src="{{HERO_IMG}}" alt="{{HERO_ALT}}" style="width:100%; height:auto; border-radius:6px;">
+              </a>
+            </td>
+          </tr>
+
+          <tr><td style="height:14px; line-height:14px; font-size:14px;">&nbsp;</td></tr>
+
+          <!-- Headline + intro + main CTA -->
+          <tr>
+            <td style="padding:0 22px 6px 22px; text-align:center;">
+              <p class="h1" style="margin:0 0 8px 0; font-size:20px; font-weight:700; color:#1f1f1f;">{{HEADLINE}}</p>
+              <p style="margin:0 0 16px 0; font-size:15px; line-height:1.5; color:#444444;">{{INTRO_TEXT}}</p>
+              <a href="{{CTA_LINK}}" target="_blank" style="background-color:#2B4C7E; color:#ffffff; text-decoration:none; padding:12px 20px; border-radius:6px; font-weight:700; display:inline-block;">{{CTA_TEXT}}</a>
+            </td>
+          </tr>
+
+          <tr><td style="height:18px; line-height:18px; font-size:18px;">&nbsp;</td></tr>
+
+          <!-- Contact block (text links only, no icon images) -->
+          <tr>
+            <td style="padding:18px 22px; background:#F4F1EC; border-radius:8px;">
+              <p style="margin:0 0 6px 0; font-weight:700; color:#2B4C7E;">Work with {{BRAND_NAME}}</p>
+              <p style="margin:0; font-size:13px; line-height:1.5; color:#555555;">{{CONTACT_LINE_1}}<br/>{{CONTACT_LINE_2}}</p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:18px 22px; text-align:center; font-size:12px; color:#999999;">
+              <p style="margin:0 0 8px 0;">
+                <a href="{{WEBSITE_LINK}}" style="color:#999999; text-decoration:underline;">Website</a> &nbsp;•&nbsp;
+                <a href="{{LINKEDIN_LINK}}" style="color:#999999; text-decoration:underline;">LinkedIn</a> &nbsp;•&nbsp;
+                <a href="{{INSTAGRAM_LINK}}" style="color:#999999; text-decoration:underline;">Instagram</a>
+              </p>
+              <p style="margin:0;">You're receiving this because you signed up for updates from {{BRAND_NAME}}.
+                <a href="{{UNSUBSCRIBE_LINK}}" style="color:#999999; text-decoration:underline;">Unsubscribe</a>.</p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
